@@ -1,0 +1,265 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Global Variables */
+
+:root{
+
+  /* Primary Colours */
+  --clr-primary-blue: hsl(223, 87%, 63%);
+
+  /* Secondary Colours */
+  --clr-secondary-pale-blue: hsl(223, 100%, 88%);
+  --clr-secondary-light-red: hsl(354, 100%, 66%);
+
+  /* Neutral Colours */
+  --clr-neutral-gray: hsl(0, 0%, 59%);
+  --clr-neutral-dark-blue: hsl(209, 33%, 12%);
+
+  /* Typography */
+  --ff-base: 'Libre Franklin', sans-serif;
+
+  /* Font Size */
+  --fs-base: 20px;
+
+  /* Font Weight */
+  --fw-base: 300;
+  --fw-medium: 600;
+  --fw-bold: 700;
+}
+
+/* Customized Styles */
+
+body {
+  font-family: var(--ff-base);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  color: var(--clr-neutral-dark-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  padding: 2rem;
+}
+.section-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+.section-1 img{
+  width: 50px;
+  height: auto;
+}
+.section-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-2 h1{
+  font-size: 1rem;
+  font-weight: var(--fw-base);
+  color: var(--clr-neutral-gray);
+  margin-top: 2rem;
+
+}
+#bold{
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-dark-blue);
+}
+.section-2 p{
+  font-size: 0.6rem;
+  color: var(--clr-neutral-dark-blue);
+  text-align: center;
+  margin: 1rem 0;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: auto;
+
+}
+#input-button{
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+}
+#input-button div{
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+  height: auto;
+}
+#input-button input{
+  width: 250px;
+  height:30px;
+  padding: 1rem;
+  font-size: 0.6rem;
+  font-weight: var(--fw-base);
+  color: var(--clr-neutral-gray);
+  border: 1px solid var(--clr-neutral-gray);
+  border-radius: 50px;
+}
+
+#button{
+  width: 250px;
+  height:auto;
+
+  padding: 0.6rem;
+  font-size: 0.6rem;
+  font-weight: var(--fw-medium);
+
+  color: white;
+  background-color: var(--clr-primary-blue);
+
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px 0 hsla(223, 87%, 63%, 0.5);
+}
+#button:hover, #button:focus{
+  background-color: hsl(223, 100%, 68%);
+  box-shadow: 2px 2px 1px 0px hsl(223, 100%, 68%);
+}
+#input-button button a{
+  text-decoration: none;
+  color: white;
+}
+.error{
+  color: red;
+  font-size: 0.6rem;
+  font-weight: var(--fw-base);
+  line-height: 1.4;
+  font-style:italic;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+.section-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+  max-width: 800px;
+
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+.dashboard img{
+  width: 100%;
+  height: auto;
+}
+.section-4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap:1rem;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+.icons svg{
+  width: 25px;
+  height: auto;
+
+  fill: var(--clr-primary-blue)
+}
+.copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+
+}
+.copyright p{
+  font-size: 0.7rem;
+  color: var(--clr-neutral-gray);
+  
+}
+
+@media (min-width: 600px){
+
+  body{
+    max-width: 1400px;
+  }
+  .section-1 img{
+    width: 100px;
+  }
+  .section-2 h1{
+    font-size: 2rem;
+  }
+  .section-2 p{
+    font-size: 1rem;
+  }
+  #input-button{
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+
+    margin-top: 2rem;
+  }
+  #input-button div{
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 450px;
+    height: auto;
+  }
+  #input-button input{
+    width: 450px;
+    height:45px;
+    font-size: 0.8rem;
+  }
+  #button{
+    width: 200px;
+    height:45px;
+    font-size: 0.8rem;
+    padding: 0rem;
+  }
+}

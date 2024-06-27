@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL:(https://github.com/undrthegraveyard/Ping-single-column-coming-soon-page.git)
-- Live Site URL:(https://your-live-site-url.com)
+- Live Site URL:(https://undrthegraveyard.github.io/Ping-single-column-coming-soon-page/)
 
 ### Built with
 
